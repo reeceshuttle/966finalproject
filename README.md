@@ -1,1 +1,2 @@
-# Using Bayesian Imitation Learning to Infer Plans in PDDL Domains
+# Using Bayesian Imitation Learning to Infer Plans
+By Reece Shuttleworth
