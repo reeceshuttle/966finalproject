@@ -1,0 +1,27 @@
+Q:
+(:objects b a c - block)
+(:init (clear c) (clear a) (clear b) (ontable c) (ontable a)
+ (ontable b) (handempty))
+(:goal (and (on c b) (on b a)))
+A:
+(pick-up b)
+(stack b a)
+(pick-up c)
+(stack c b)
+
+Q:
+(:objects b a c - block)
+(:init  (on c b) (on b a) (handempty))
+(:goal (and (ontable c) (ontable a) (ontable b)))
+A:
+(unstack c b)
+(put-down c)
+(unstack b a)
+(put-down b)
+
+Q:
+(:objects b a c - block)
+(:init (clear c) (clear b) (ontable c) (ontable a)
+  (on b a) (handempty))
+(:goal (and (on c a)))
+A:
